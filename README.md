@@ -1,2 +1,2 @@
-debt_reduction
+Debt Reduction
 ==============
