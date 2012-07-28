@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-DebtReduction::Application.config.secret_token = '7a3859878d7d2b26d5ee43bc2cf8bb8dff617da4daa292467b4199d64dfc886c67485e92b514a0c06badcb8fda1fd237c940e45ff92af1d65207700fa2016c92'
+Debt::Application.config.secret_token = '1f957ab35d029b6d356c3f84ab63f2ae9d9c38289469a56ab69d8634abc531e346a93cde62638bf085bd1bfd34d0f32b0ada821699411bf4d40a5900145a9022'

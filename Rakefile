@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-DebtReduction::Application.load_tasks
+Debt::Application.load_tasks

@@ -1,4 +1,4 @@
-DebtReduction::Application.routes.draw do
+Debt::Application.routes.draw do
   controller :main do
     # get "show"
     get "edit"
