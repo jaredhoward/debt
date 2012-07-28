@@ -1,0 +1,37 @@
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th rowspan="2">Date</th>
+      <% @reduction_calc.accounts.each do |account| %>
+        <th colspan="3"><%= account[:name] %></th>
+      <% end %>
+      <th colspan="3">Totals</th>
+    </tr>
+    <tr>
+      <% @reduction_calc.accounts.each do |account| %>
+        <th>Payment</th>
+        <th>Interest</th>
+        <th>Balance</th>
+      <% end %>
+      <th>Payment</th>
+      <th>Interest</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @reduction_calc.monthly_reduction.each do |month| %>
+      <tr>
+        <td><%= month[:date].strftime("%b %Y") %></td>
+        <% @reduction_calc.accounts.each do |account| %>
+          <% outstanding = month[:accounts].include?(account[:name]) %>
+          <td class="reduction payment"><%= number_to_currency(month[:payments][account[:name]][:payment]) if outstanding %></td>
+          <td class="reduction interest"><%= number_to_currency(month[:payments][account[:name]][:interest]) if outstanding %></td>
+          <td class="reduction balance"><%= number_to_currency(month[:payments][account[:name]][:balance]) if outstanding %></td>
+        <% end %>
+        <td class="reduction total payment"><%= number_to_currency(month[:totals][:payment]) %></td>
+        <td class="reduction total interest"><%= number_to_currency(month[:totals][:interest]) %></td>
+        <td class="reduction total balance"><%= number_to_currency(month[:totals][:balance]) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,42 @@
+{
+  "amount_for_debt": 1500,
+  "start_this_month": false,
+  "accounts": [
+    {
+      "name": "Lowes",
+      "balance": 849.15,
+      "rate": 24.99,
+      "min_payment": 78
+    },
+    {
+      "name": "Home Depot",
+      "balance": 354.77,
+      "rate": 22.99,
+      "min_payment": 64
+    },
+    {
+      "name": "Chase Visa",
+      "balance": 4687.58,
+      "rate": 13.24,
+      "min_payment": 100
+    },
+    {
+      "name": "Lexus Auto Loan",
+      "balance": 3750.34,
+      "rate": 3.99,
+      "min_payment": 112
+    },
+    {
+      "name": "Honda Auto Loan",
+      "balance": 9500,
+      "rate": 3.74,
+      "min_payment": 280
+    },
+    {
+      "name": "America First Visa",
+      "balance": 14638.64,
+      "rate": 8.5,
+      "min_payment": 400
+    }
+  ]
+}

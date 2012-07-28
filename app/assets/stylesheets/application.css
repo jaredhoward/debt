@@ -1,13 +1,112 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
  *= require_self
  *= require_tree .
  */
+
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #FFFFFF;
+  color: #333333;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  padding: 20px;
+}
+a {
+  color: #0088CC;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+}
+.table {
+  margin-bottom: 18px;
+  width: 100%;
+}
+.table th, .table td {
+  border-top: 1px solid #DDDDDD;
+  line-height: 18px;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.table th {
+  font-weight: bold;
+}
+.table thead th {
+  vertical-align: bottom;
+}
+.table caption + thead tr:first-child th, .table caption + thead tr:first-child td, .table colgroup + thead tr:first-child th, .table colgroup + thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {
+  border-top: 0 none;
+}
+.table tbody + tbody {
+  border-top: 2px solid #DDDDDD;
+}
+.table-condensed th, .table-condensed td {
+  padding: 4px 5px;
+}
+.table-bordered {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-collapse: separate;
+  border-color: #DDDDDD #DDDDDD #DDDDDD -moz-use-text-color;
+  border-radius: 4px 4px 4px 4px;
+  border-style: solid solid solid none;
+  border-width: 1px 1px 1px 0;
+}
+.table-bordered th, .table-bordered td {
+  border-left: 1px solid #DDDDDD;
+}
+.table-bordered caption + thead tr:first-child th, .table-bordered caption + tbody tr:first-child th, .table-bordered caption + tbody tr:first-child td, .table-bordered colgroup + thead tr:first-child th, .table-bordered colgroup + tbody tr:first-child th, .table-bordered colgroup + tbody tr:first-child td, .table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+  border-top: 0 none;
+}
+.table-bordered thead:first-child tr:first-child th:first-child, .table-bordered tbody:first-child tr:first-child td:first-child {
+  border-top-left-radius: 4px;
+}
+.table-bordered thead:first-child tr:first-child th:last-child, .table-bordered tbody:first-child tr:first-child td:last-child {
+  border-top-right-radius: 4px;
+}
+.table-bordered thead:last-child tr:last-child th:first-child, .table-bordered tbody:last-child tr:last-child td:first-child {
+  border-radius: 0 0 0 4px;
+}
+.table-bordered thead:last-child tr:last-child th:last-child, .table-bordered tbody:last-child tr:last-child td:last-child {
+  border-bottom-right-radius: 4px;
+}
+.table-striped tbody tr:nth-child(2n+1) td, .table-striped tbody tr:nth-child(2n+1) th {
+  background-color: #F9F9F9;
+}
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #F5F5F5;
+}
+
+
+table th, table td {
+  white-space: nowrap;
+}
+
+table td.reduction {
+  text-align: right;
+}
+table td.payment {
+  color: blue;
+}
+table td.interest {
+  color: red;
+}
+table td.total {
+  font-weight: bold;
+}
